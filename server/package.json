@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
+	"scripts": {
+		"dev": "nodemon --env-file .env ./src/index.ts",
+		"start": "node --env-file .env ./dist/index.js",
+		"tsc": "tsc"
+	},
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
 		"cors": "^2.8.5",
