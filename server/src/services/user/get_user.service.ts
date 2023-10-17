@@ -8,6 +8,5 @@ export const getUser = async ({
 	id?: string
 	email?: string
 }): Promise<UserInterface | null> => {
-	const user = await UserModel.findOne({ $or: [{ id }, { email }] })
-	return user
+	return await UserModel.findOne({ $or: [{ id }, { email }] })
 }

@@ -1,5 +1,5 @@
-import { UserModel } from "@/models"
+import { UserModel } from '@/models'
 
 export const deleteUser = async (id: string) => {
-  return await UserModel.findByIdAndDelete(id)
+	return await UserModel.findByIdAndDelete(id)
 }
